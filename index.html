@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div>
+     <h1>Entrada Mundial Argentina</h1>
+      <p>Completa el formulario para reservar tu entrada para el partido de Argentina</p>
+        <form action="#" method="POST" id="registroForm">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <div>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui..." required>
+            </div>
+                
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="tel" id="dni" name="dni" placeholder="Escribe aqui..." required>
+            </div>
+
+            <div>
+                <label for="birth">Fecha de nacimiento:</label>
+                <input type="date" id="birth" name="birth" placeholder="Escribe aqui..." required>
+            </div>
+            
+            <div>
+                <label for="tel">Telefono:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Ej: 11 1234-5678" maxlength="12" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ej: name@mail.com" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacion del partido</legend>
+
+           <div>
+               <label for="curso">Partido:</label>
+               <select name="curso" id="curso" required>
+               <option value="">Selecciona el partido</option>
+               <option value="ARG-MEX">Argentina vs México</option>
+               <option value="ARG-BRA">Argentina vs Brasil</option>
+               <option value="ARG-ESP">Argentina vs España</option>
+               <option value="ARG-FRA">Argentina vs Francia</option>
+               <option value="ARG-URU">Argentina vs Uruguay</option>
+               </select>
+           </div>
+
+            <div>
+                <label>
+                 <input type="radio" name="mañana" value="mañana">
+                 Entrada General
+               </label>
+
+                <label>
+                 <input type="radio" name="tarde" value="tarde">
+                 Entrada Preferencial
+               </label>
+
+                <label>
+                 <input type="radio" name="noche" value="noche">
+                Entrada VIP
+               </label>
+            <div>
+               
+        <div>
+                <label for="conocimientos">Sector de la cancha:</label>
+                <div>
+                <label>
+               <input type="checkbox" name="conocimientos" value="popular">
+               Popular
+               </label>
+            
+                <label>
+               <input type="checkbox" name="conocimientos" value="platea">
+               Platea
+              </label>
+
+              <label>
+              <input type="checkbox" name="conocimientos" value="preferencial">
+              Preferencial
+             </label>
+            
+              <label>
+             <input type="checkbox" name="conocimientos" value="vip">
+              VIP
+             </label>
+              </div>
+        </div>
+            
+           <div>
+                <label for="motivo">Mensaje para la Selección:</label>
+                <textarea name="comentarios" id="comentarios" rows="4" placeholder="Escribí un mensaje para la Selección Argentina..."></textarea>
+            </div>
+         </fieldset>
+
+        <fieldset>
+            <legend>Datos de compra</legend>
+
+           <label for="password">Número de tarjeta</label>
+            <input type="password" name="password" id="password" placeholder="Ingresá tu número de tarjeta" minlength="8" required>
+
+              <div>
+                   <label for="confirmPassword">Código de seguridad</label>
+                  <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repite tu contraseña" minlength="8" required>
+                </div>
+        </fieldset>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="termycond" required>
+                    Acepto los <a href="#">términos y condiciones</a> *
+                </label>
+            </div>
+            
+            <div>
+             <label>
+             <input type="checkbox" id="robot" required>
+              No soy un robot
+             </label>
+            </div>
+
+            <div>
+                <button type="submit">Comprar entrada</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+    </div>  
+    </form>
+</body>
+</html>
