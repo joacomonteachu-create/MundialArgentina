@@ -10,13 +10,12 @@ body {
     min-height: 100vh;
     padding: 20px;
     color: #333;
+    line-height: 1.6;
 }
-
-/* FORMULARIO */
 
 body > div {
     background-color: white;
-    width: 650px;
+    width: px;
     max-width: 100%;
     margin: 20px auto;
     padding: 30px;
@@ -34,20 +33,58 @@ h1 {
     margin-bottom: 8px;
 }
 
-/* LAS 3 ESTRELLAS */
-
-h1::before {
-    content: "★ ★ ★";
-    display: block;
-    color: #d6a900;
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
 h1 + p {
     text-align: center;
     color: #666;
     margin-bottom: 25px;
+}
+
+/* SUBTITULOS Y PARRAFOS */
+
+h2 {
+    color: #087eb5;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* LISTAS */
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 18px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* BOTON */
+
+a.boton {
+    display: inline-block;
+    background-color: #169bd5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+a.boton:hover {
+    background-color: #087eb5;
+}
+
+.final {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 /* FORMULARIO */
@@ -57,8 +94,6 @@ form {
     flex-direction: column;
     gap: 20px;
 }
-
-/* SECCIONES */
 
 fieldset {
     border: 2px solid #b8dff0;
@@ -77,25 +112,13 @@ legend {
     padding: 0 8px;
 }
 
-/* PUNTO CELESTE AL LADO DEL TITULO */
-
-legend::before {
-    content: "●";
-    color: #75c9ed;
-    margin-right: 6px;
-}
-
-/* ESPACIO ENTRE LOS CAMPOS */
-
 fieldset > div {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 fieldset > div:last-child {
     margin-bottom: 0;
 }
-
-/* ETIQUETAS */
 
 label {
     display: block;
@@ -104,8 +127,6 @@ label {
     color: #333;
     margin-bottom: 5px;
 }
-
-/* CAMPOS */
 
 input[type="text"],
 input[type="email"],
@@ -122,8 +143,6 @@ textarea {
     font-family: Arial, sans-serif;
 }
 
-/* CUANDO TOCAMOS UN CAMPO */
-
 input:focus,
 select:focus,
 textarea:focus {
@@ -131,14 +150,10 @@ textarea:focus {
     outline: none;
 }
 
-/* TEXTO DE AYUDA */
-
 input::placeholder,
 textarea::placeholder {
     color: #999;
 }
-
-/* OPCIONES */
 
 select {
     cursor: pointer;
@@ -150,8 +165,6 @@ input[type="checkbox"] {
     height: 17px;
     margin-right: 5px;
 }
-
-/* OPCIONES DE RADIO Y CHECKBOX */
 
 fieldset > div > div {
     display: flex;
@@ -173,20 +186,14 @@ fieldset > div > div label:hover {
     background-color: #d5effa;
 }
 
-/* MENSAJE */
-
 textarea {
     resize: vertical;
     min-height: 80px;
 }
 
-/* ENLACES */
-
 a {
     color: #087eb5;
 }
-
-/* BOTONES */
 
 form > div:last-child {
     display: flex;
@@ -204,8 +211,6 @@ button {
     cursor: pointer;
 }
 
-/* BOTON RESERVAR */
-
 button[type="submit"] {
     background-color: #169bd5;
     color: white;
@@ -215,8 +220,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #087eb5;
 }
-
-/* BOTON LIMPIAR */
 
 button[type="reset"] {
     background-color: white;
@@ -229,10 +232,7 @@ button[type="reset"]:hover {
     background-color: #eaf7fc;
 }
 
-/* CELULAR */
-
 @media (max-width: 600px) {
-
     body {
         padding: 10px;
     }
