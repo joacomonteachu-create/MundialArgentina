@@ -15,7 +15,7 @@ body {
 
 body > div {
     background-color: white;
-    width: px;
+    width: 90%;
     max-width: 100%;
     margin: 20px auto;
     padding: 30px;
@@ -79,12 +79,6 @@ a.boton {
 
 a.boton:hover {
     background-color: #087eb5;
-}
-
-.final {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 25px;
 }
 
 /* FORMULARIO */
@@ -232,7 +226,52 @@ button[type="reset"]:hover {
     background-color: #eaf7fc;
 }
 
+/* IMAGENES */
+
+.imagen-principal {
+    display: block;
+    width: 45%;
+    height: auto;
+    margin: 20px auto 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #aaa;
+}
+
+.imagen-seccion {
+    display: block;
+    width: 35%;
+    height: auto;
+    margin: 15px auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #aaa;
+}
+
+/* FOTO DE MESSI MÁS CHICA */
+
+.imagen-messi {
+    display: block;
+    width: 18%;
+    height: auto;
+    margin: 15px auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #aaa;
+}
+
+/* MAPA DE ENTRADAS */
+
+.imagen-entradas {
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: 20px auto 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #aaa;
+}
+
+/* CELULAR */
+
 @media (max-width: 600px) {
+
     body {
         padding: 10px;
     }
@@ -259,5 +298,21 @@ button[type="reset"]:hover {
 
     button {
         width: 100%;
+    }
+
+    .imagen-principal {
+        width: 80%;
+    }
+
+    .imagen-seccion {
+        width: 70%;
+    }
+
+    .imagen-messi {
+        width: 45%;
+    }
+
+    .imagen-entradas {
+        width: 45%;
     }
 }
